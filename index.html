@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    
+    <div class="container"> <!--holds all of the divs for the password generator-->
+        <h1>GENDEV </h1>
+        <h2>Create Password</h2>
+        <div class="result-container"> <!--this class controls the password that is generated-->
+            <span id="result"></span>
+        </div>
+        <div class="form__field">
+            <div class="form_input"></div>
+            <span class="hidden">New Password</span>
+            <label for="password"></label>
+                <input id="password" type="text" name="password" class="form__input" placeholder="minimum 8 characters" required>
+        </div>
+        <div class="settings">
+            <!--<div class="setting">
+                <label>Password length</label>
+                <input type="number" id="length" min='8' max='128' value='8' />
+            </div>-->
+            <div class="setting">
+                <label>Include uppercase letters</label> 
+                <input type="checkbox" id="uppercase" checked />
+            </div>
+            <div class="setting">
+                <label>Include lowercase letters</label> 
+                <input type="checkbox" id="lowercase" checked />
+            </div>
+            <div class="setting">
+                <label>Include numbers</label> 
+                <input type="checkbox" id="numbers" checked />
+            </div>
+            <div class="setting">
+                <label>Include special characters(ex: %$!@)</label> 
+                <input type="checkbox" id="symbols" checked />
+            </div>
+        </div>
+        <div>
+        <button class="btn btn-large" id="generate"><a href="secq.html">
+            Generate Password
+        </button>
+        </div>
+    </div>
+</html>
+
+
+    <!--different color buttons with our names and it will link to our github-->
